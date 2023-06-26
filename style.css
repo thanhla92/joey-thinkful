@@ -1,0 +1,92 @@
+/*Mobile view*/
+
+header {
+    /*Sets background color to dark blue*/
+    background-color: #0B1C51;
+    /* Adds 40 pixels of space under header so that the content not so close to navigation bar*/
+    margin-bottom: 40px;
+}
+
+header h1 {
+    /* Sets text color of header to white */
+    color: #fff;
+    /* Centers the text */
+    text-align: center;
+    /* Text font properties*/
+    font-size: 70px;
+    font-family: Montserrat, sans-serif;
+    /* Removes the spacing around `h1`. */
+    margin: 0;
+    /* Pushes the text down 20 pixels from the top of the page. */
+    padding-top: 20px;
+}
+
+header nav {
+    /* Change the display default to `flex`. */
+    display: flex;
+    /* Centers `display: flex` */
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    /* Removes default padding to the left of the unordered list */
+    padding-left: 0;
+    /* Removes bullet points */
+    list-style: none;
+}
+
+header nav ul li a {
+    /* Change the color of link to white */
+    color: #fff;
+    /* Removes underline */
+    text-decoration: none;
+    /* Applies 20 pixels of margin to the right of each link,
+        creating gap between. */
+    margin: 0 20px 0 0;
+    /* Font properties */
+    font-size: 28px;
+    font-family: Montserrat, sans-serif;
+}
+
+header nav ul li:last-child a {
+    /* Removes the margin to the right of last link, so the nav
+        appears center. */
+    margin-right: 0;
+}
+
+/* Desktop view */
+
+@media all and (min-width: 600px) {
+    header {
+        display: flex;
+        /* Pushes the items to the far sides of the browser. */
+        justify-content: space-between;
+        /* Adds 30 px padding left and right, 0 padding top and bottom*/
+        padding: 0 50px;
+    }
+
+    header h1 {
+        margin: 14px 0;
+        /* Removes padding above. */
+        padding-top: 0;
+        /* Text font properties*/
+        font-size: 50px;
+        font-family: Montserrat, sans-serif;
+    }
+
+    header nav {
+        margin: 8px
+    }
+
+    header nav ul li a {
+        /* Font properties */
+        font-size: 24px;
+        font-family: Montserrat, sans-serif;
+    }
+
+    /* Hover properties only applies in Desktop view */
+    header nav ul li a:hover {
+        color: #b2222b;
+    }
+}
